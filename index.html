@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Interaktywne CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Jan Kowalski</h1>
+            <h2>Programista Full-Stack</h2>
+            <div class="social-links">
+                <a href="https://github.com/twojprofil" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/twojprofil" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:twoj@email.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#experience">Doświadczenie</a></li>
+            <li><a href="#education">Wykształcenie</a></li>
+            <li><a href="#skills">Umiejętności</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>O mnie</h2>
+            <div class="content">
+                <img src="https://via.placeholder.com/150" alt="Moje zdjęcie" class="profile-img">
+                <p>Cześć! Jestem pasjonatem programowania z 5-letnim doświadczeniem w tworzeniu aplikacji webowych. Specjalizuję się w technologiach JavaScript, React i Node.js. Uwielbiam rozwiązywać złożone problemy i uczyć się nowych technologii.</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Doświadczenie zawodowe</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Senior Developer</h3>
+                    <h4>TechCorp, Warszawa</h4>
+                    <p class="date">2020 - obecnie</p>
+                    <ul>
+                        <li>Rozwój aplikacji webowych w React i Node.js</li>
+                        <li>Optymalizacja wydajności aplikacji</li>
+                        <li>Mentoring junior developerów</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Junior Developer</h3>
+                    <h4>WebSolutions, Kraków</h4>
+                    <p class="date">2018 - 2020</p>
+                    <ul>
+                        <li>Tworzenie komponentów UI w React</li>
+                        <li>Implementacja funkcjonalności backendowych</li>
+                        <li>Testowanie aplikacji</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Wykształcenie</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Informatyka, magister</h3>
+                    <h4>Politechnika Warszawska</h4>
+                    <p class="date">2016 - 2018</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Informatyka, licencjat</h3>
+                    <h4>Uniwersytet Jagielloński</h4>
+                    <p class="date">2013 - 2016</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Umiejętności</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Vue.js</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Python</li>
+                        <li>REST API</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Inne</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <li>Agile/Scrum</li>
+                        <li>Język angielski (C1)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projekty</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Task Manager App</h3>
+                    <p>Aplikacja do zarządzania zadaniami z pełnym stackiem MERN</p>
+                    <a href="#" class="btn">Zobacz projekt</a>
+                </div>
+                <div class="project-card">
+                    <h3>E-commerce Platform</h3>
+                    <p>Platforma sklepowa z systemem płatności</p>
+                    <a href="#" class="btn">Zobacz projekt</a>
+                </div>
+                <div class="project-card">
+                    <h3>Weather Dashboard</h3>
+                    <p>Dashboard pogodowy z użyciem API</p>
+                    <a href="#" class="btn">Zobacz projekt</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Imię i nazwisko</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Wiadomość</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Wyślij</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Moje Interaktywne CV. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
