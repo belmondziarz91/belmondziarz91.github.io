@@ -6,6 +6,23 @@
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,6 +36,10 @@
         </div>
     </header>
 
+    <div class="profile-header">
+        <img src="profile-img.jpg" alt="Moje zdjęcie">
+    </div>
+
     <nav>
         <ul>
             <li><a href="#about">O mnie</a></li>
@@ -30,12 +51,6 @@
     </nav>
 
     <main class="container">
-        <section id="image">
-            <div class="content">
-                <img src="./profile-img.jpg" alt="Moje zdjęcie" class="profile-img" width="150" height="200">
-            </div>
-        </section>
-        
         <section id="about">
             <h2>O mnie</h2>
             <div class="content">
@@ -43,13 +58,14 @@
             </div>
         </section>
 
+        <!-- Reszta kodu pozostaje bez zmian -->
         <section id="education">
             <h2>Wykształcenie</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <h3>4 semestr Inżynierii Systemów, Specjalizacja - Inżynieria Danych</h3>
                     <h4>Politechnika Wrocławska</h4>
-                    <p class="date">2023 - teraz</p>
+                    <p class="date">2023 -</p>
                 </div>
                 <div class="timeline-item">
                     <h4>Akademickie Liceum Ogólnokształcące Politechniki Wrocławskiej</h4>
