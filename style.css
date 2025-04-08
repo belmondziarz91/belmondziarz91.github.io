@@ -212,15 +212,15 @@ section h2::after {
     margin-bottom: 0.5rem;
 }
 
-.skill-category a {
-    color: inherit;
-    text-decoration: none;
+.skills-grid .skill-category ul li a {
+    color: var(--dark-color) !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
 }
 
-.skill-category a:hover {
-    color: #0066cc;
-    text-decoration: underline;
-}
+.skills-grid .skill-category ul li a:hover {
+    color: var(--primary-color) !important;
+    text-decoration: underline !important;
 
 /* Projekty */
 .projects-grid {
