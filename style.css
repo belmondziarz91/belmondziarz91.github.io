@@ -212,6 +212,16 @@ section h2::after {
     margin-bottom: 0.5rem;
 }
 
+.skill-category a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.skill-category a:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
 /* Projekty */
 .projects-grid {
     display: grid;
